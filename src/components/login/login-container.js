@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import { loginSubmit } from '../../actions/auth-actions'
 // import { bindActionCreators } from 'redux'
-// import { connect } from 'react-redux'
+import { connect } from 'react-redux'
 
 import './login-container.css'
 
@@ -39,14 +39,14 @@ class LoginForm extends Component {
             <input
               placeholder='username'
               onChange={this.onusernameChange}
-              val={this.state.username} />
+              value={this.state.username} />
           </div>
           <div>
             <label>Password:</label>
             <input
               placeholder='Password'
               onChange={this.onPasswordChange}
-              val={this.state.password} />
+              value={this.state.password} />
           </div>
           <input type="submit"/>
           <p>{this.props.error}</p>
