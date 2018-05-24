@@ -1,7 +1,10 @@
 .header-container {
-    background-color: #333;
     overflow: hidden;
     font-family: sans-serif;
+    color: tomato;
+    text-align: center;
+    margin-top: 20%;
+    border: 1px solid tomato;
   }
 
 /* https://www.w3schools.com/howto/howto_js_topnav.asp */
