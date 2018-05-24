@@ -11,7 +11,7 @@ class Header extends React.Component {
   }
     render(){
       return(
-        <div className="header-conatiner">
+        <div className="header-container">
           <a className='title' href="#title">Stupid Todos</a>
         { this.props.username !== null && <a href='#logout' onClick={ this.onLogoutClick }>{ `Logout ${ this.props.username }` }</a>}
         </div>
