@@ -8,7 +8,8 @@ import { createStore, applyMiddleware } from 'redux'
 import reducers from './reducers/root-reducer'
 import { BrowserRouter, Switch } from 'react-router-dom'
 import Header from './components/header/header-container'
-import Login from  './components/login/login-container'
+import ProtectRoute from './components/protect-route'
+import TodoIndex from './components/todo/todo-index-container'
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
 
@@ -17,7 +18,7 @@ ReactDOM.render((
     <BrowserRouter>
         <div>
           <Header />
-          <Login />
+          <ProtectRoute path='/' component={ TodoIndex }/>
         </div>
     </BrowserRouter>
   </Provider>
